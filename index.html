@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+
+    <!------tailwind stylesheet----------->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-----custom css-------------->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!----header------------->
+    <header></header>
+    <!----main------------->
+    <main>
+        <section class="container mx-auto">
+            <div class="grid grid-cols-2 gap-2">
+
+                <!----product image---------->
+                <div class="m-8 p-5">
+                    <div class="h-auto w-1/2 mx-auto">
+                        <img class="w-auto" src="images/mac.png" alt="">
+                    </div>
+                </div>
+
+                <!-----product description------->
+                <div class="mt-8 h-auto">
+                    <h1 class="text-5xl font-semibold mb-5">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores. 7-core GPU
+                        and
+                        16-core Neural Engine 8CB unified memory 256Gb SSD storage Two Thunderbolt/USB 4 ports Magic
+                        Mouse Magic Keyboard - US English.</p>
+
+                    <!-----product features---------->
+                    <div class="mt-12">
+                        <h4 class="text-xl font-semibold mb-2">Memory</h4>
+                        <button id="first-memoryPrice"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">8GB
+                            unified
+                            memory</button>
+                        <button id="second-memoryPrice"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">16GB
+                            unified memory</button>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold">Storage</h4>
+                        <button id="first-storagePrice"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">256GB
+                            SSD storage</button>
+                        <button id="second-storagePrice"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">512GB
+                            SSD storage</button>
+                        <button id="third-storagePrice"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">1TB
+                            SSD storage</button>
+                    </div>
+
+                    <div class="mt-12">
+                        <h4 class="text-xl font-semibold">Choose your delivery option</h4>
+                        <button id="regular-deliveryCharges"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl md:mb-4">Friday,
+                            Aug 25 FREE Prime Delivery</button>
+                        <button id="express-deliveryCharges"
+                            class="border border-black rounded p-2 hover:bg-black hover:text-white shadow-xl">Friday,
+                            Aug 21 Delivery Charges $20</button>
+                    </div>
+
+                    <!----product total price------------>
+                    <div class="grid grid-cols-2 mt-8 ">
+                        <table class="text-left ">
+                            <tbody class="mb-2 divide-y divide-gray-500">
+                                <tr>
+                                    <th>Best Price</th>
+                                    <td>$<span id="best-price">1299</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Extra Memory Cost</th>
+                                    <td>$<span id="extra-memoryPrice">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Extra Storage Cost</th>
+                                    <td>$<span id="extra-storagePrice">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Delivery Charge</th>
+                                    <td>$<span id="delivery-charges">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Total Price</th>
+                                    <td>$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-----promo code submit------------>
+                    <div class="mt-12">
+                        <h5>Add Promo Code</h5>
+                        <input type="text" name="" id="promo-code"
+                            class="border border-gray-300 rounded px-2 py-1 outline-none"
+                            placeholder="Enter promo code">
+                        <button id="submit-btn"
+                            class="rounded bg-red-500 px-3 py-1 text-white shadow-xl hover:bg-black outline-none">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mx-auto text-center mt-8 mb-4 text-3xl font-semibold">Total: $<span id="total-amount">1299</span>
+            </h2>
+        </section>
+    </main>
+
+    <!----footer------------->
+    <footer></footer>
+
+    <!--------script js--------------->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
